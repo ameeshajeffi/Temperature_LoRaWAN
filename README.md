@@ -1,3 +1,5 @@
+NAME: AMEESHA JEFFI
+REG: 212223220007
 # INTERFACING TEMPERATURE SENSOR WITH IOT CONTROLLER AND UPLOADING DATA TO THE CLOUD VIA LORAWAN
 
 # AIM:
@@ -244,7 +246,7 @@ void loop() {
 }
 
 ```
-# uplink formatter
+# UPLINK FORMATTER
 ```
 function Decoder(bytes, port) {
     var Temperature = (bytes[0] << 8 | bytes[1]) / 100;
