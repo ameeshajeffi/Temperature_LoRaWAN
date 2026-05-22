@@ -244,6 +244,17 @@ void loop() {
 }
 
 ```
+# uplink formatter
+```
+function Decoder(bytes, port) {
+    var Temperature = (bytes[0] << 8 | bytes[1]) / 100;
+    var Humidity = (bytes[2] << 8 | bytes[3]) / 100;
+    return {
+        Temperature: Temperature,
+        Humidity: Humidity
+    }
+};
+```
 # CIRCUIT DIAGRAM:
 <img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/b3631416-2610-464d-9492-167faac3bbd2" />
 
